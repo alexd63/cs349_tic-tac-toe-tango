@@ -1,0 +1,16 @@
+.board-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .square {
+    width: 34px;
+    height: 34px;
+    margin: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #999;
+  }
+  
