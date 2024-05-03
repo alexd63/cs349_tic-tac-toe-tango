@@ -1,0 +1,27 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .restartButton {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .status {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .gameBoard {
+    margin-right: 20px;
+  }
+  
+  .gameInfo {
+    margin-left: 20px;
+  }
+  

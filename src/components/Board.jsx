@@ -1,29 +1,18 @@
+// Board.js
 import React from 'react';
 import Square from './Square';
-import styles from './Board.css'; // Make sure this is the correct path
+import styles from './Board.module.css'; 
 
 function Board({ squares, onClick }) {
-  const renderSquare = (i) => (
+  const box = (i) => (
     <Square value={squares[i]} onClick={() => onClick(i)} />
   );
 
   return (
     <div>
-      <div className={styles.boardRow}>
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
-      </div>
-      <div className={styles.boardRow}>
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
-      </div>
-      <div className={styles.boardRow}>
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
-      </div>
+      <div className={styles.boardRow}>{box(0)}{box(1)}{box(2)}</div>
+      <div className={styles.boardRow}>{box(3)}{box(4)}{box(5)}</div>
+      <div className={styles.boardRow}>{box(6)}{box(7)}{box(8)}</div>
     </div>
   );
 }

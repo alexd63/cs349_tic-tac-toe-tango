@@ -1,9 +1,10 @@
+// Square.js
 import React from 'react';
-import styles from './Square.css';
+import styles from './Square.module.css'; 
 
-function Square({ value, onSquareClick }) {
+function Square({ value, onClick }) {
   return (
-    <button className={styles.square} onClick={onSquareClick}>
+    <button className={styles.square} onClick={onClick}>
       {value}
     </button>
   );
