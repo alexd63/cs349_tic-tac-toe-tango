@@ -7,10 +7,11 @@ function Game() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
 
+  // Prevents click action if the game is over or square is already filled
   const handleClick = (i) => {
     const newSquares = squares.slice();
     if (calculateWinner(squares) || squares[i]) {
-      return; // Prevents click action if the game is over or square is already filled
+      return; 
     }
     newSquares[i] = xIsNext ? 'X' : 'O';
     setSquares(newSquares);
@@ -46,6 +47,7 @@ function Game() {
     return null;
   }
 
+  
   return (
     <div className={styles.game}>
       <div className={styles.status}>{status}</div>
