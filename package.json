@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Welcome to our classic Tic-Tac-Toe game, developed in React",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

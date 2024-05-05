@@ -50,6 +50,7 @@ function Game() {
   
   return (
     <div className={styles.game}>
+      <h1 className={styles.title}>Tic-Tac-Tango</h1>
       <div className={styles.status}>{status}</div>
       <Board squares={squares} onClick={handleClick} />
       <button className={styles.restartButton} onClick={handleRestart}>Restart Game</button>

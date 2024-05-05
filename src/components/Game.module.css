@@ -1,28 +1,27 @@
+/* Game.module.css */
 .game {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 60px;
-  }
-  .restartButton {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 10px 20px;
-    font-size: 30px;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  align-items: center; /* Center items horizontally since it's a column layout */
+  margin-top: 20px; /* Adjusted for less spacing */
+}
 
-  .status {
-    margin: 20px;
-    font-size: 50px;
-    font-weight: bold;
-  }
+.title {
+  font-size: 48px; /* Adjusted for reasonable sizing */
+  text-align: center;
+  margin-top: 10px; /* Reduced the extreme margin */
+  color: #333;
+}
 
-  .gameBoard {
-    margin-right: 20px;
-  }
-  
-  .gameInfo {
-    margin-left: 20px;
-  }
-  
+.status {
+  margin: 20px;
+  font-size: 24px; /* Adjusted for reasonable sizing */
+  font-weight: bold;
+}
+
+.restartButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px; /* Adjusted for reasonable sizing */
+  cursor: pointer;
+}
